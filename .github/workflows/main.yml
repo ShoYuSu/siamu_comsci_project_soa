@@ -103,7 +103,7 @@ jobs:
     steps:
       - name: Setup SSH Key
         run: |
-          echo "$SSH_KEY" | base64 -d > key.pem
+          echo "$SSH_KEY" > key.pem
           chmod 600 key.pem
         env:
           SSH_KEY: ${{ secrets.DO_SSH_KEY }}
