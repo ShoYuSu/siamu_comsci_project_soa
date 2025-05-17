@@ -12,6 +12,6 @@ def get_connection():
         #host='localhost',
         #user='root',
         #password='1111',
-        #database='nor_db',
+        #database='ecom_db',
     )
     return connection
